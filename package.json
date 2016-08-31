@@ -1,0 +1,13 @@
+{
+  "name": "GustScroll",
+  "version": "0.0.1",
+  "description": "A full browser compatible custom scroll bar solution",
+  "keywords": [
+    "gustscroll",
+    "gust",
+    "scroll",
+    "Custom scrollbar"
+  ],
+  "author": "GuanYong",
+  "homepage": "https://github.com/guanyong1993/"
+}
