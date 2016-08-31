@@ -1,0 +1,46 @@
+.__custom-container{
+    overflow: hidden !important;
+}
+
+.__custom-panel{
+    width: 100%;
+    height: auto;
+    float: left;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.__custom-scroll{
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+    padding: 0px 0px;
+}
+.__custom-scroll .__bar{
+    width: 8px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    position: relative;
+    top: 0px;
+    cursor: default;
+}
+.__custom-scroll .__bar:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.__custom-scroll .__bar:active,
+.__custom-scroll .__bar:active{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.__custom-container .__custom-scroll .__bar{
+    visibility: hidden;
+}
+.__custom-container:hover .__custom-scroll .__bar{
+    visibility: visible;
+}
+.__custom-container .__custom-scroll .__bar.moved{
+    visibility: visible !important;
+}

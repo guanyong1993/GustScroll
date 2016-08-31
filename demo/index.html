@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test gust scroll demo</title>
+    <link type="text/css" rel="stylesheet" href="../resource/css/gust-scroll.css" />
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        .test-container {
+            width: 460px;
+            height: 380px;
+            margin: 20px auto;
+            border: 1px solid #dddddd;
+            padding: 5px;
+        }
+        .code {
+            width: auto;
+            height: auto;
+            padding: 8px;
+            border: 1px solid #dddddd;
+            background-color: #eeeeee;
+            margin: 8px;
+            font-size: 12px;
+            color: #333333;
+            font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            line-height: 20px;
+        }
+        .code .note{
+            color: #969896;
+        }
+        .top-btn{
+            width: 120px;
+            height: 38px;
+            border: 1px solid #dddddd;
+            background-color: #eeeeee;
+            color: #333333;
+            font-size: 16px;
+            font-family: '微软雅黑', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            margin: 20px auto;
+            line-height: 38px;
+            text-align: center;
+            cursor: default;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .top-btn:hover {
+            background-color: #ffffff;
+        }
+        .top-btn:active {
+            background-color: #cccccc;
+        }
+        .copy{
+            text-align: center;
+            color: #999999;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h3>前置条件: </h3>
+        <h5>&nbsp;&nbsp;依赖的JS库: </h5>
+        <p class="code">
+            <span class="note">// 引入jQuery </span> <br/>
+            &lt;script src="jquery.1.11.3.min.js"&gt;&lt;/script&gt; <br/>
+            <span class="note">// 引入jQuery.mousewheel </span> <br/>
+            &lt;script src="jquery.mousewheel.min.js"&gt;&lt;/script&gt; <br/>
+            <span class="note">// 引入GustScroll </span> <br/>
+            &lt;script src="GustScroll.js"&gt;&lt;/script&gt; <br/>
+        </p>
+        <h5>&nbsp;&nbsp;依赖的样式表: </h5>
+        <p class="code">
+            <span class="note">// 引入GustScroll </span> <br/>
+            &lt;link rel="stylesheet" href="gust-scroll.css" /&gt; <br/>
+        </p>
+        <h3>API: </h3>
+        <h5>&nbsp;&nbsp;enable: </h5>
+        <p class="code">
+            <span class="note">// 启动自定义滚动条</span> <br/>
+            GustScroll.enable($('.test-container'));
+        </p>
+        <h5>&nbsp;&nbsp;disable: </h5>
+        <p class="code">
+            <span class="note">// 取消自定义滚动条</span> <br/>
+            GustScroll.disable($('.test-container'));
+        </p>
+        <h5>&nbsp;&nbsp;update: </h5>
+        <p class="code">
+            <span class="note">// 更新自定义滚动条</span> <br/>
+            GustScroll.update($('.test-container'));
+        </p>
+        <h5>&nbsp;&nbsp;scrollTo: </h5>
+        <p class="code">
+            <span class="note">// 滚动滚动条到指定位置</span> <br/>
+            GustScroll.scrollTo($('.test-container'), -50, true);
+        </p>
+        <h5>&nbsp;&nbsp;scrollToTop: </h5>
+        <p class="code">
+            <span class="note">// 滚动滚动条到顶部</span> <br/>
+            GustScroll.scrollToTop($('.test-container'), true);
+        </p>
+        <h5>&nbsp;&nbsp;scrollToBottom: </h5>
+        <p class="code">
+            <span class="note">// 滚动滚动条到底部</span> <br/>
+            GustScroll.scrollToBottom($('.test-container'), true);
+        </p>
+
+        <div class="top-btn" onclick="GustScroll.scrollToTop($('.test-container'), true)">回到顶部</div>
+    </div>
+
+    <div class="copy">© 2016 Gust, Inc.<br/>author: GuanYong</div>
+
+    <script type="text/javascript" src="../resource/js/jquery.1.11.3.min.js"></script>
+    <script type="text/javascript" src="../resource/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="../bin/debug/GustScroll.js"></script>
+    <script>
+        GustScroll.enable($('.test-container'));
+    </script>
+</body>
+</html>
