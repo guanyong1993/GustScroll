@@ -20,8 +20,6 @@ A full browser compatible custom scroll bar solution
 
 ### enable:
 
-#### Arguments
-
 - `el` : (*Object*) 需要启用元素(jQuery元素)
 
 ```javascript
@@ -30,8 +28,6 @@ GustScroll.enable($('.test-container'));
 ```
 
 ### disable:
-
-#### Arguments
 
 - `el` : (*Object*) 需要取消元素(jQuery元素)
 
@@ -42,8 +38,6 @@ GustScroll.disable($('.test-container'));
 
 ### update:
 
-#### Arguments
-
 - `el` : (*Object*) 需要更新元素(jQuery元素)
 
 ```javascript
@@ -52,8 +46,6 @@ GustScroll.update($('.test-container'));
 ```
 
 ### scrollTo:
-
-#### Arguments
 
 - `el` : (*Object*) 需要滚动元素(jQuery元素)
 - `animate` : (*Boolean*) 是否使用动画, 默认 `false`
@@ -65,8 +57,6 @@ GustScroll.scrollTo($('.test-container'), -50, true);
 
 ### scrollToTop:
 
-#### Arguments
-
 - `el` : (*Object*) 需要滚动元素(jQuery元素)
 - `animate` : (*Boolean*) 是否使用动画, 默认 `false`
 
@@ -76,8 +66,6 @@ GustScroll.scrollToTop($('.test-container'), true);
 ```
 
 ### scrollToBottom:
-
-#### Arguments
 
 - `el` : (*Object*) 需要滚动元素(jQuery元素)
 - `animate` : (*Boolean*) 是否使用动画, 默认 `false`
