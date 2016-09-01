@@ -48,6 +48,7 @@ GustScroll.update($('.test-container'));
 ### scrollTo:
 
 - `el` : (*Object*) 需要滚动元素(jQuery元素)
+- `value` : (*Number*) 需要滚动的值
 - `animate` : (*Boolean*) 是否使用动画, 默认 `false`
 
 ```javascript
